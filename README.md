@@ -3,7 +3,7 @@ sogou translate for free with async and proxy support
 
 ### Installation
 Not available yet
-```pip install sogou-tr-async-async```
+```pip install sogou-tr-async-free```
 
 Validate installation
 ```
