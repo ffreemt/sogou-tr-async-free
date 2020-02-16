@@ -11,9 +11,9 @@ exclude_lines =
     raise NotImplementedError
     if 0:
     if __name__ == .__main__.:
-    except Exception:
-    except Exception as exc:
     def main():
+    except Exception as exc:
+    return ''
 [paths]
 include =
   sogou_tr_async
