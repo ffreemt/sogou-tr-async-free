@@ -8,7 +8,7 @@ from urllib import parse
 import hashlib
 
 import httpx
-from jmespath import search  # type: ignore
+# from jmespath import search  # type: ignore
 from fuzzywuzzy import fuzz, process  # type: ignore
 
 from loguru import logger
@@ -145,9 +145,9 @@ async def sogou_tr_async(  # pylint: disable=too-many-arguments
     sogou_tr_async.resp = resp
 
     try:
-        res = search(
-            'data.translate.dit', resp.json()
-        )
+        # pip install jmespath problem in linux?
+        # res = search('data.translate.dit', resp.json())
+        res = resp.json.get('data').get('translate').get('dit')
     except Exception as exc:
         logger.error(exc)
         raise
