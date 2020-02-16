@@ -5,7 +5,7 @@ sogou translate for free with async and proxy support
 
 ```pip install -U sogou-tr-async-free```
 
-Validate installation
+To validate installation
 ```
 python -c "import sogou_tr_async; print(sogou_tr_async.__version__)"
 0.0.1
