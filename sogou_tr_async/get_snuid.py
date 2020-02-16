@@ -35,4 +35,6 @@ def get_snuid() -> str:
     return ''
 
 
-SNUID = get_snuid()
+# SNUID = get_snuid()
+# fixed snuid
+SNUID = '9F30864B94960D0893F77CA194CEB827'
