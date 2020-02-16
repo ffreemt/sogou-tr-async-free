@@ -147,7 +147,7 @@ async def sogou_tr_async(  # pylint: disable=too-many-arguments
     try:
         # pip install jmespath problem in linux?
         # res = search('data.translate.dit', resp.json())
-        res = resp.json.get('data').get('translate').get('dit')
+        res = resp.json().get('data').get('translate').get('dit')
     except Exception as exc:
         logger.error(exc)
         raise
