@@ -19,6 +19,7 @@ install_requires = [
     'loguru',
     # 'jmespath',
     'fuzzywuzzy',
+    'freemt_utils',
 ]
 
 README_rst = f'{curr_dir}/README.md'
