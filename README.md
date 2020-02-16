@@ -1,5 +1,5 @@
-# sogou-tr-async-free ![Python3.6|3.7 package](https://github.com/ffreemt/sogou-tr-async-free/workflows/Python3.6%7C3.7%20package/badge.svg)[![codecov](https://codecov.io/gh/ffreemt/sogou-tr-async-free/branch/master/graph/badge.svg)](https://codecov.io/gh/ffreemt/sogou-tr-async)
-sogou translate for free with async and proxy support
+# sogou-tr-async-free ![Python3.6|3.7 package](https://github.com/ffreemt/sogou-tr-async-free/workflows/Python3.6%7C3.7%20package/badge.svg)[![codecov](https://codecov.io/gh/ffreemt/sogou-tr-async-free/branch/master/graph/badge.svg)](https://codecov.io/gh/ffreemt/sogou-tr-async)[![PyPI version](https://badge.fury.io/py/sogou-tr-async-free.svg)](https://badge.fury.io/py/sogou-tr-async-free)
+Sogou translate for free with async and proxy support
 
 ### Installation
 
