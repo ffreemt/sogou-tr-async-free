@@ -4,5 +4,5 @@ from .get_snuid import get_snuid
 
 # version__ = '0.0.1'
 # __date__ = '2020.2.15'
-__version__ = '0.0.21'
+__version__ = '0.0.23'
 VERSION = tuple(__version__.split('.'))

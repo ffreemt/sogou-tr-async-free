@@ -73,3 +73,11 @@ async def test_debug_true():
     text = 'test'
     trtext = await sogou_tr_async(text, 'en', 'zh', debug=1)
     assert trtext[1] is None
+
+
+@pytest.mark.asyncio
+async def test_abc():
+    ''' async test fuzzy from '''
+    text = 'test abc'
+    trtext = await sogou_tr_async(text, 'en', 'zh')
+    assert '测试' in trtext
