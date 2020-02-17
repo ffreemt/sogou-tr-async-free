@@ -15,6 +15,7 @@ from loguru import logger
 
 from freemt_utils import httpx_get, make_url
 from .get_snuid import SNUID
+from .get_snuid import get_snuid
 
 URL0 = 'https://fanyi.sogou.com'
 URL = "https://fanyi.sogou.com/reventondc/translateV2"
@@ -125,10 +126,15 @@ async def sogou_tr_async(  # pylint: disable=too-many-arguments
     }
 
     _ = f'{URL}?{parse.urlencode(data)}'
+    headers = {
+        'Referer': 'https://fanyi.sogou.com/',
+        'Cookie': 'SNUID=%s' % get_snuid(),
+    }
     try:
         resp = await httpx_get(
             _,
-            headers=HEADERS,
+            # headers=HEADERS,
+            headers=headers,
             proxy=proxy,
         )
 
