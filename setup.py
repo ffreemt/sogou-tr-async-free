@@ -18,7 +18,7 @@ install_requires = [
     'httpx',
     'loguru',
     # 'jmespath',
-    'fuzzywuzzy',
+    'rapidfuzz',
     'freemt_utils',
 ]
 
