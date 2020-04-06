@@ -9,7 +9,7 @@ import hashlib
 
 import httpx
 # from jmespath import search  # type: ignore
-from fuzzywuzzy import fuzz, process  # type: ignore
+from rapidfuzz import process  # type: ignore
 
 from loguru import logger
 
@@ -97,9 +97,9 @@ async def sogou_tr_async(  # pylint: disable=too-many-arguments
 
     if fuzzy:
         if from_lang not in SOGOUTR_CODES:
-            from_lang = process.extractOne(from_lang, SOGOUTR_CODES, scorer=fuzz.UWRatio)[0]  # NOQA
+            from_lang = process.extractOne(from_lang, SOGOUTR_CODES)[0]  # NOQA
         if to_lang not in SOGOUTR_CODES:
-            to_lang = process.extractOne(to_lang, SOGOUTR_CODES, scorer=fuzz.UWRatio)[0]  # NOQA
+            to_lang = process.extractOne(to_lang, SOGOUTR_CODES)[0]  # NOQA
 
     if from_lang == to_lang:
         sogou_tr_async.text = 'nothing to do'
